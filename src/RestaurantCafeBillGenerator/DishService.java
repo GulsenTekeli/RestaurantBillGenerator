@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 //4-Dish objeleri ile ilgili işlemler
-public class DishService {
+public abstract class DishService {
 
     //5-yiyecekleri bir listeye koyalım
 
-    private List<Dish> dishList=new ArrayList<>();
+    List<Dish> dishList=new ArrayList<>();
 
     //5-a-yiyecekleri oluşturup listeye ekleme
     public DishService(){
@@ -67,18 +67,5 @@ public class DishService {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public abstract void fillDishList();
 }
